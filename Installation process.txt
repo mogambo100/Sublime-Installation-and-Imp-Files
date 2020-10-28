@@ -20,3 +20,8 @@ https://blog.codingblocks.com/2019/setting-up-a-c-competitive-programming-enviro
 THIS LINK 5th point contains the process to precompile th eheader file and the works goes very fast.
 By changing the input and output names..
 8. after all these try once ctrl+b for simple cod eand it works fine././
+
+
+
+If GNU PBDS is not working please refer to this CF blog
+https://codeforces.com/blog/entry/69409
