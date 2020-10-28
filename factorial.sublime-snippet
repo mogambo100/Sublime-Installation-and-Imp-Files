@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[
+void factorial() {
+	f1[0] = f2[0] = 1;
+	in[1] = 1;
+	for (int i = 2; i < N; i++) {
+		in[i] = ((mod - mod / i) * in[mod % i]) % mod;
+	}
+	for (int i = 1; i < N; i++) {
+		f1[i] = (f1[i - 1] * i) % mod;
+		f2[i] = (f2[i - 1] * in[i]) % mod;
+	}
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>factorial</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
