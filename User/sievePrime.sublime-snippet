@@ -1,0 +1,25 @@
+<snippet>
+	<content><![CDATA[
+vector<int>primes;
+int pr[N];
+vector<int>factors[N];
+
+void sieve() {
+	for (int i = 2; i < N; i++)
+		pr[i] = 1;
+	for (int i = 2; i < N; i++) {
+		if (pr[i]) {
+			primes.pb(i);
+			for (int j = i; j < N; j += i) {
+				factors[j].pb(i);
+				pr[j] = 0;
+			}
+		}
+	}
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>sieve</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
